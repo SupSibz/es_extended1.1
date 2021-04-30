@@ -28,3 +28,8 @@ esx_inventoryhud/html/js/inventory.js
 
  <div id="carry-weight">0 / 50kg</div>
 ```
+
+# SQL
+```database
+ <div id="carry-weight">0 / 50kg</div>
+```
