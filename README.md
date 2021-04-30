@@ -1,7 +1,10 @@
 # es_extended 1.1.0
-
+```
 FiveM Weight Item
+Path
 esx_inventoryhud/html/js/inventory.js
+esx_inventoryhud/html/ui.html
+```
 
 # Javascript
 ```lua
