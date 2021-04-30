@@ -30,6 +30,8 @@ esx_inventoryhud/html/js/inventory.js
 ```
 
 # SQL
-```database
- <div id="carry-weight">0 / 50kg</div>
+```
+ Name : weight
+ Datatype : INT
+ Default : 0
 ```
