@@ -5,11 +5,10 @@ esx_inventoryhud/html/js/inventory.js
 
 # API
 ```lua
-vSql.Async.execute(query, parameters, callback)
-vSql.Async.transaction(queries, parameters, callback)
 
-vSql.Async.fetchScalar(query, parameters, callback)
-vSql.Async.fetchAll(query, parameters, callback)
+ if (event.data.action == "setItems") {
+        inventorySetup(event.data.itemList);
+
 ```
 
 ค้นหา 
