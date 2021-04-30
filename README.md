@@ -3,7 +3,7 @@
 FiveM Weight Item
 esx_inventoryhud/html/js/inventory.js
 
-# ค้นหา
+# Javascript
 ```lua
 
  if (event.data.action == "setItems") {
@@ -21,4 +21,10 @@ esx_inventoryhud/html/js/inventory.js
         let weight = `นํ้าหนักกระเป๋าคุณ ${carryWeight} / ${maxCarryWeight} KG`
 		$("#carry-weight").html(weight)
 		$(".info-div2").html(event.data.text);
+```
+
+# HTML
+```html
+
+ <div id="carry-weight">0 / 50kg</div>
 ```
