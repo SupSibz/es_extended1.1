@@ -3,8 +3,6 @@
 FiveM Weight Item
 esx_inventoryhud/html/js/inventory.js
 
-Dfault
-
 else if (event.data.action == "setItems") {
         inventorySetup(event.data.itemList);
 		$(".info-div2").html(event.data.text);
