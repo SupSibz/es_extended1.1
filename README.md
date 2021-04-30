@@ -5,7 +5,7 @@ esx_inventoryhud/html/js/inventory.js
 
 # Javascript
 ```lua
-
+ค้นหา
  if (event.data.action == "setItems") {
         inventorySetup(event.data.itemList);
         เพิ่ม
