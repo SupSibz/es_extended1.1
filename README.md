@@ -38,9 +38,7 @@ else if (event.data.action == "setItems") {
             }
         });
         
-	
-  #After
-  
+
   else if (event.data.action == "setItems") {
         inventorySetup(event.data.itemList);
         let { carryWeight, maxCarryWeight } = event.data;
