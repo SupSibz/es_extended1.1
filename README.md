@@ -1,4 +1,4 @@
-# es_extended 1.1
+# es_extended 1.1.0
 
 FiveM Weight Item
 esx_inventoryhud/html/js/inventory.js
