@@ -1,7 +1,7 @@
 # es_extended 1.1.0
 ```
 FiveM Weight Item
-Path
+Path File
 esx_inventoryhud/html/js/inventory.js
 esx_inventoryhud/html/ui.html
 ```
