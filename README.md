@@ -34,6 +34,7 @@ esx_inventoryhud/html/ui.html
 
 # SQL
 ```
+เพิ่ม SQL item
  Name : weight
  Datatype : INT
  Default : 0
