@@ -7,7 +7,7 @@ esx_inventoryhud/html/ui.html
 ```
 
 # Javascript
-```lua
+```javascript
 ค้นหา
  if (event.data.action == "setItems") {
         inventorySetup(event.data.itemList);
@@ -24,6 +24,29 @@ esx_inventoryhud/html/ui.html
         let weight = `นํ้าหนักกระเป๋าคุณ ${carryWeight} / ${maxCarryWeight} KG`
 		$("#carry-weight").html(weight)
 		$(".info-div2").html(event.data.text);
+```
+# Function Server
+```lua
+
+ ESX.CarryWeight = function(xPlayer)
+	local _invData = xPlayer.getInventory()
+	local _carryWeight = 0
+	for i=1, #_invData do
+		local itemName = _invData[i].name
+		local itemCount = _invData[i].count
+		_carryWeight = _carryWeight + (ESX.Items[itemName].weight * itemCount)
+	end
+	return _carryWeight
+end
+
+ESX.isOverCarry = function(xPlayer)
+	if ESX.CarryWeight(xPlayer) > Config.MaxCarryWeight then
+		TriggerClientEvent("esx:overcarry", xPlayer.source, true)
+	else
+		TriggerClientEvent("esx:overcarry", xPlayer.source, false)
+	end
+end
+
 ```
 
 # HTML
