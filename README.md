@@ -25,6 +25,16 @@ esx_inventoryhud/html/ui.html
 		$("#carry-weight").html(weight)
 		$(".info-div2").html(event.data.text);
 ```
+
+# Main Server
+```lua
+
+ESX.RegisterServerCallback('esx:getPlayerCarryWeight', function(source, cb)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	cb(ESX.CarryWeight(xPlayer), Config.MaxCarryWeight)
+end)
+```
+
 # Function Server
 ```lua
 
